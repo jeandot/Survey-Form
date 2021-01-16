@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 id="title">Survey Form</h1>
+    </head>
+    <body>
+        <p id="description">This is a sample survey form.</p>
+        <form id="survey-form" action="">
+            <label id="name-label">Please enter your name: <input id="name" type="text" placeholder="Name" required>*</label>
+            <br>
+            <label id="email-label">Please enter your email: <input id="email" type="email" placeholder="Email" required>*</label>
+            <br>
+            <label id ="number-label">Please enter your age: <input id="number" type="number" min=0 max= 200 placeholder="Age" required>*</label>
+            <br>
+            <label for="gender">What is your gender?</label>
+            <select name="gender" id="dropdown">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="unspecified">Do not wish to say</option>
+            </select>
+            <br>
+            <label for="hamburger"><input id="hamburger" type="radio" name="food" value="hamburger" checked> Hamburger</label>
+            <label for="pizza"><input id="pizza" type="radio" name="food" value="pizza"> Pizza</label><br>
+            <label for="now"><input id="now" type="checkbox" name="when" value="now" checked> Now!</label>
+            <label for="later"><input id="later" type="checkbox" name="when" value="later"> Maybe later...</label>
+            <label for="never"><input id="never" type="checkbox" name="when" value="never"> Never</label>
+            <br>
+            <label id="comments">Any comments? </label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        <p>(*) This is a required field.</p>
+    </body>
+</html>
